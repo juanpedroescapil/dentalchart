@@ -1,9 +1,10 @@
+
 "use client";
 import type { ReactNode } from 'react';
 import Link from 'next/link';
 import { Home, Users, PlusCircle, Settings, CalendarDays, Stethoscope, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from '@/components/ui/sheet';
 import { UserNav } from '@/components/navigation/UserNav';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
@@ -74,6 +75,9 @@ export function DashboardLayout({ children }: { children: ReactNode }) {
               </Button>
             </SheetTrigger>
             <SheetContent side="left" className="p-0 w-[280px] bg-sidebar text-sidebar-foreground border-r-0">
+              <SheetHeader className="sr-only">
+                <SheetTitle>Navigation Menu</SheetTitle>
+              </SheetHeader>
               <SidebarContent />
             </SheetContent>
           </Sheet>
