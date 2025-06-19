@@ -40,7 +40,7 @@ export function LoginForm() {
         <div className="mx-auto mb-4 bg-primary/10 text-primary p-3 rounded-full w-fit">
           <ShieldQuestion size={32} strokeWidth={1.5}/>
         </div>
-        <CardTitle className="font-headline text-3xl">Welcome Back!</CardTitle>
+        <CardTitle className="font-headline text-3xl">Bienvenido!</CardTitle>
         <CardDescription>Sign in to access DentalChart Pro.</CardDescription>
       </CardHeader>
       <CardContent>
